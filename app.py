@@ -37,7 +37,7 @@ except FileNotFoundError:
 
 # Título y banner
 if cabezote_img:
-    st.image(cabezote_img, use_column_width=True)
+    st.image(cabezote_img, use_container_width=True)
 st.title("Modelo IA para predicción de problemas cardiacos")
 
 # Resumen del modelo
@@ -82,7 +82,7 @@ if prediction[0] == 0:
         unsafe_allow_html=True
     )
     if nosufre_img:
-        st.image(nosufre_img, use_column_width=True)
+        st.image(nosufre_img, use_container_width=True)
 else:
     st.markdown(
         """
@@ -93,7 +93,7 @@ else:
         unsafe_allow_html=True
     )
     if sisufre_img:
-        st.image(sisufre_img, use_column_width=True)
+        st.image(sisufre_img, use_container_width=True)
 
 # Información del autor
 st.markdown("---")
